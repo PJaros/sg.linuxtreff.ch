@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Test JS</title>
+  <meta charset='utf-8'>
+  <!-- <link rel="stylesheet" href="/build/styles.css" /> -->
+</head>
+<body>
+  <h1>Test JS</h1>
+  <p>Das ist eine Test-Seite für Javascript Code</p>
+
+  <h2>Nächste Treffs</h2>
+  <ul>
+    <li id="treff">Javascript ist leider ausgeschaltet</li>
+  </ul>
+  <p id="entry"></p>
+  <script>
+    function formatDate(d, weekdayOverride = null) {
+      // Options: https://www.w3schools.com/jsref/jsref_tolocalestring.asp
+      var date = d.toLocaleString('de-CH', {dateStyle: "long"}); // Result: "2. Dezember 2024"
+      // From: https://stackoverflow.com/a/27347503/406423
+      var weekday = d.toLocaleString('de-CH', {weekday: "long"}); // Result: "Montag"
+      return (weekdayOverride || weekday) + ", " + date + ", 18:30"
+    }
+
+    const dayInMs = 24 * 60 * 60 * 1000;
+    let now      = new Date();
+    let tomorrow = new Date(now.getTime() + dayInMs);
+    let daysUntilTuesday = 2 - now.getDay(); // "Distanz" zum Dienstag
+    if (daysUntilTuesday < 0) daysUntilTuesday += 7; // Falls in der Vergangenheit -> +7 Tage
+
+    let output = "";
+    for (let i = 0; i < 3; i++) {
+      let tuesday = new Date(now.getTime() + dayInMs * ((7 * i) + daysUntilTuesday));
+      let weekDayOverride = (now.getDay() == 2 && i == 0) ? "Heute" : null; // 2 == Dienstag
+      output += "<li>" + formatDate(tuesday, weekDayOverride) + "</li>";
+    }
+    document.getElementById("treff").innerHTML = output;
+  </script>
+  <!-- <script src="build/main.bundle.js"></script> -->
+</body>
+</html>
