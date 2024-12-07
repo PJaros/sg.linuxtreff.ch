@@ -1,11 +1,29 @@
-from pelican.settings import DEFAULT_CONFIG
-from pelican.readers import RstReader
-
-config = DEFAULT_CONFIG.copy()
-
 AUTHOR = 'Paul Jaros'
 SITENAME = 'Linuxtreff St. Gallen'
+
 SITEURL = ""
+
+# From: https://stackoverflow.com/a/23724453/406423
+# Funktioniert seit Pelican 4.2 nicht mehr
+#
+# SITEURL = '/blog'
+# OUTPUT_PATH = 'output/blog'
+# PAGE_URL = '../{slug}.html'
+# PAGE_SAVE_AS = '../{slug}.html'
+# DISPLAY_PAGES_ON_MENU = False
+# DISPLAY_CATEGORIES_ON_MENU = False
+# MENUITEMS = [('Home', '/'), ('Blog', '/blog/')]
+
+# From https://stackoverflow.com/a/59508010/406423
+ARTICLE_URL = "blog/{date:%Y}-{date:%m}-{date:%d}-{slug}.html"
+ARTICLE_SAVE_AS = "blog/{date:%Y}-{date:%m}-{date:%d}-{slug}.html"
+INDEX_SAVE_AS = "blog/index.html"
+# MENUITEMS = [
+#  ('home', '/'),
+#  ('kontakt', '/pages/kontakt.html'),
+#  ('blog', '/blog'),
+# ]
+DISPLAY_PAGES_ON_MENU = False
 
 PATH = "content"
 
@@ -13,7 +31,12 @@ TIMEZONE = 'Europe/Rome'
 
 DEFAULT_LANG = 'de'
 
-INTRO, _ = RstReader(config).read("content/pages/about.rst")
+# From: https://stackoverflow.com/a/64725173/406423
+# Inhalt auf Hauptseite hinzufügen
+# from pelican.settings import DEFAULT_CONFIG
+# from pelican.readers import RstReader
+# config = DEFAULT_CONFIG.copy()
+# INTRO, _ = RstReader(config).read("content/pages/about.rst")
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -38,7 +61,7 @@ SOCIAL = (
 )
 
 TAGS_SAVE_AS = ''
-CATEGORY_SAVE_AS = ''
+# CATEGORY_SAVE_AS = ''
 
 DEFAULT_PAGINATION = False
 
@@ -51,6 +74,8 @@ EXTRA_PATH_METADATA = {
     # 'extra/custom.css': {'path': 'custom.css'},
     # 'extra/robots.txt': {'path': 'robots.txt'},
     # 'extra/favicon.png': {'path': 'favicon.png'},
+    'extra/ice.jpg': {'path': 'ice.jpg'},
+    'extra/tux-sg.png': {'path': 'tux-sg.png'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
     # 'extra/CNAME': {'path': 'CNAME'},
     # 'extra/LICENSE': {'path': 'LICENSE'},

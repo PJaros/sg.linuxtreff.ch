@@ -2857,6 +2857,16 @@ ul.pagination {
       list-style: none;
       border-top-color: #e6e6e6; }
 
+.main-section {
+  background-image: url('/ice.jpg');
+  background-repeat: repeat-x;
+  background-position:0px -50px;
+}
+
+.logo {
+  padding-top: 10px;
+}
+
 .side-cust {
   display: block;
   margin: 0;
