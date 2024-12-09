@@ -175,7 +175,7 @@
 
 							<div class="panel">
 							<h5>Nächste Treffs</h5>
-							<ul class="side-cust" id="treff">
+							<ul class="next-meetup" id="treff">
 							  <!-- <li id="treff">Javascript ist leider ausgeschaltet</li> -->
 							</ul>
 							<script>
@@ -190,7 +190,7 @@
 							  }
 						  
 							  const dayInMs = 24 * 60 * 60 * 1000;
-							  let now      = new Date();
+							  let now       = new Date();
 							//   let now      = new Date(new Date().getTime() - (dayInMs * 2));
 							  let daysUntilTuesday = 2 - now.getDay(); // "Distanz" zum Dienstag
 							  if (daysUntilTuesday < 0) daysUntilTuesday += 7; // Falls in der Vergangenheit -> +7 Tage

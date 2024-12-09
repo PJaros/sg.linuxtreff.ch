@@ -2867,32 +2867,12 @@ ul.pagination {
   padding-top: 10px;
 }
 
-.side-cust {
+.next-meetup {
   display: block;
-  margin: 0;
-  /*padding: 0.75rem 0;*/
-  /*list-style-type: none;*/
+  margin: 0 !important;
   list-style-position: inside;
+  font-size: 0.75rem;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-  .side-cust ul {
-    margin: 0 !important; }
-  .side-cust li {
-    /* margin: 0 0 0.4375rem 0; */
-    margin: 0 0 0 0;
-    font-size: 0.75rem; }
-    .side-cust li a {
-      display: block;
-      /*color: #008cba;*/ }
-    .side-cust li.active > a:first-child {
-      /*color: #4d4d4d;*/
-      font-weight: normal;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-    .side-cust li.divider {
-      border-top: 1px solid;
-      height: 0;
-      padding: 0;
-      /*list-style: none;*/
-      /*border-top-color: #e6e6e6;*/ }
 
 .accordion {
   *zoom: 1;
