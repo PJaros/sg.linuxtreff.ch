@@ -6,7 +6,7 @@ Der Linuxtreff St. Gallen ist eine engagierte Gemeinschaft von Linux-Enthusiaste
 ## Wie wir helfen
  - **Individuelle Beratung:** Bring dein Problem mit, und wir schauen uns gemeinsam an, was los ist. Ob es um die Installation einer neuen Distribution, die Konfiguration von Software oder die Behebung von Fehlern geht - wir stehen dir zur Seite.
  - **Community-Support:** Unser Treffen bietet eine entspannte Atmosphäre, in der du Fragen stellen kannst, ohne dich unwohl zu fühlen. Es gibt keine "dummen“ Fragen – nur Gelegenheiten, dazuzulernen.
- - **Online-Support:** Neben unseren physischen Treffen sind wir über unsere Mailinglste erreichbar, um schnelle Hilfe zu leisten, wenn du nicht bis zum nächsten Treffen warten kannst.
+ - **Online-Support:** Neben unseren physischen Treffen sind wir über unsere [Mailingliste](https://lists.sg.linuxtreff.ch/mailman/listinfo/mailingliste) erreichbar, um schnelle Hilfe zu leisten, wenn du nicht bis zum nächsten Treffen warten kannst.
 
 ## Der Treff
 

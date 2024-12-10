@@ -1,0 +1,1 @@
+/home/jarop/Nextcloud/Projekt/Ruum42 - Hosting Umzug/sg.linuxtreff.ch - Webseite/publish.sh
