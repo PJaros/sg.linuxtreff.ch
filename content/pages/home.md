@@ -1,13 +1,24 @@
 Title: Über den Linuxtreff St. Gallen
 Save_as: index.html
 
-Der Linuxtreff St. Gallen ist eine lockere Gruppe von computer- und technikinteressierten Personen die sich ausserdem mit Linux beschäftigen. Die Teilnahme am Treff ist kostenlos und setzt keine Mitgliedschaft voraus. Der Treff heisst alle Interessierten beider Geschlechter jeden Alters willkommen. Sowohl blutige Anfänger als auch Gurus sind herzlich eingeladen bei uns vorbei zu schauen.
+Der Linuxtreff St. Gallen ist eine engagierte Gemeinschaft von Linux-Enthusiasten, die sich regelmäßig treffen, um Wissen zu teilen, Erfahrungen auszutauschen und anderen bei ihren Anliegen rund um Linux zu helfen. Ganz gleich, ob du ein absoluter Neuling bist, der gerade erst auf Linux umsteigt, oder ein erfahrener Anwender, der vor einer kniffligen Herausforderung steht – bei uns bist du herzlich willkommen.
+
+## Wie wir helfen
+ - **Individuelle Beratung:** Bring dein Problem mit, und wir schauen uns gemeinsam an, was los ist. Ob es um die Installation einer neuen Distribution, die Konfiguration von Software oder die Behebung von Fehlern geht - wir stehen dir zur Seite.
+ - **Community-Support:** Unser Treffen bietet eine entspannte Atmosphäre, in der du Fragen stellen kannst, ohne dich unwohl zu fühlen. Es gibt keine "dummen“ Fragen – nur Gelegenheiten, dazuzulernen.
+ - **Online-Support:** Neben unseren physischen Treffen sind wir über unsere Mailinglste erreichbar, um schnelle Hilfe zu leisten, wenn du nicht bis zum nächsten Treffen warten kannst.
 
 ## Der Treff
 
+![Ruum42 Eingang]({static}/pages/eingang.jpg)
+![Ruum42 Eingang näher]({static}/pages/eingang2.jpg)
+{: .p-center }
 
-Die Türen zum Treff öffnen jede Woche jeden Dienstag ab 18:30 im Hackerspace Ruum42 in St. Gallen an der Andreasstrasse 5. Der Eingang befindet sich auf der linken Seite bei der Garage Enzler im Kellergeschoss. Für Strom und Internetzugang ist gesorgt. Getränke sind vorhanden. Essen wird auch immer wieder mal beim Kebab Laden um die Ecke bestellt.
+<!-- {: style='align:center;' } -->
+<!-- {: #someid .someclass somekey='some value' } -->
 
-## Das Programm
+Die Türen zum Linuxtreff öffnen jeden Dienstag um 18:30 im Hackerspace Ruum42 in St.&nbsp;Gallen an der Andreasstrasse 5.
 
-Es gibt kein Programm oder regelmässige Vorträge. Wir sitzen in der Regel in kleineren oder grösseren Gruppen und diskutiert was gerade anfällt. Wir sind immer bereit Gästen mit Software- oder Hardware-Problemen ein Ohr zu leihen.
+Der Eingang befindet sich auf der linken Seite bei der Garage Enzler im Kellergeschoss. Für Strom und Internetzugang ist gesorgt. Getränke sind vorhanden. Wir holen uns zusammen auch immer wieder mal eine Pizza.
+
+![Karte Andreasstrasse St. Gallen]({static}/pages/karte.png){: .img-center }

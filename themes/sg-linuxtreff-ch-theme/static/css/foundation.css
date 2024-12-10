@@ -2857,23 +2857,6 @@ ul.pagination {
       list-style: none;
       border-top-color: #e6e6e6; }
 
-.main-section {
-  background-image: url('/ice.jpg');
-  background-repeat: repeat-x;
-  background-position:0px -50px;
-}
-
-.logo {
-  padding-top: 10px;
-}
-
-.next-meetup {
-  display: block;
-  margin: 0 !important;
-  list-style-position: inside;
-  font-size: 0.75rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-
 .accordion {
   *zoom: 1;
   margin-bottom: 0; }

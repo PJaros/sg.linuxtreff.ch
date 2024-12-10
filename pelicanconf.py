@@ -90,3 +90,8 @@ THEME = './themes/sg-linuxtreff-ch-theme'
 
 # FOUNDATION_FOOTER_TEXT = "Linuxtreff St. Gallen"
 FOUNDATION_FOOTER_TEXT = ' '
+
+# MARKDOWN = {'extension_configs': {
+#         'markdown.extensions.attr_list':{},
+#     },
+# }
