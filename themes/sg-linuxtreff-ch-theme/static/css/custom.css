@@ -137,3 +137,8 @@ code {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.blocked-tuesday {
+    text-decoration: line-through;
+    color: gray;
+}
