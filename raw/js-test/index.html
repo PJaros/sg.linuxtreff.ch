@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <title>Test JS</title>
-  <meta charset='utf-8'>
-  <!-- <link rel="stylesheet" href="/build/styles.css" /> -->
+    <title>Test JS</title>
+    <meta charset='utf-8'>
+    <!-- <link rel="stylesheet" href="/build/styles.css" /> -->
 </head>
 <style>
-  li .blocked-tuesday {
-    text-decoration: line-through;
-    color: gray;
-  }
-  </style>
+    .blocked-tuesday {
+        text-decoration: line-through;
+        color: gray;
+    }
+</style>
 <body>
-  <h1>Test JS</h1>
-  <p>Das ist eine Test-Seite für Javascript Code</p>
+    <h1>Test JS</h1>
+    <p>Das ist eine Test-Seite für Javascript Code</p>
 
-  <h2>Nächste Treffs</h2>
-  <ul>
-    <li id="treff">Javascript ist leider ausgeschaltet</li>
-  </ul>
-  <p id="entry"></p>
-  <script>
-    function formatDate(d, weekdayOverride = null) {
-      // Options: https://www.w3schools.com/jsref/jsref_tolocalestring.asp
-      // Combination: https://www.freecodecamp.org/news/how-to-format-dates-in-javascript/
-      const opts = {year: 'numeric', month: 'short', day: 'numeric'};
-      var date = d.toLocaleString('de-CH', opts); // Result: "2. Dezember 2024"
-      // From: https://stackoverflow.com/a/27347503/406423
-      var weekday = d.toLocaleString('de-CH', {weekday: "long"}); // Result: "Montag"
-      return (weekdayOverride || weekday) + ", " + date + ", 18:30"
-    }
-    function formatIsoDate(d) {
-      // From: https://stackoverflow.com/a/29774197/406423
-      return d.toISOString().split('T')[0];
-    }
-  
-    const dayInMs = 24 * 60 * 60 * 1000;
-    let now       = new Date();
-  //   let now      = new Date(new Date().getTime() - (dayInMs * 2));
-    let daysUntilTuesday = 2 - now.getDay(); // "Distanz" zum Dienstag
-    if (daysUntilTuesday < 0) daysUntilTuesday += 7; // Falls in der Vergangenheit -> +7 Tage
+    <h2>Nächste Treffs</h2>
+    <ul>
+        <li id="treff">Javascript ist leider ausgeschaltet</li>
+    </ul>
+    <p id="entry"></p>
+    <script>
+        function formatDate(d, weekdayOverride = null) {
+            // Options: https://www.w3schools.com/jsref/jsref_tolocalestring.asp
+            // Combination: https://www.freecodecamp.org/news/how-to-format-dates-in-javascript/
+            const opts = {year: 'numeric', month: 'short', day: 'numeric'};
+            var date = d.toLocaleString('de-CH', opts); // Result: "2. Dezember 2024"
+            // From: https://stackoverflow.com/a/27347503/406423
+            var weekday = d.toLocaleString('de-CH', {weekday: "long"}); // Result: "Montag"
+            return (weekdayOverride || weekday) + ", " + date + ", 18:30"
+        }
+        function formatIsoDate(d) {
+            // From: https://stackoverflow.com/a/29774197/406423
+            return d.toISOString().split('T')[0];
+        }
+      
+        const dayInMs = 24 * 60 * 60 * 1000;
+        let now       = new Date();
+        // let now      = new Date(new Date().getTime() - (dayInMs * 2));
+        let daysUntilTuesday = 2 - now.getDay(); // "Distanz" zum Dienstag
+        if (daysUntilTuesday < 0) daysUntilTuesday += 7; // Falls in der Vergangenheit -> +7 Tage
 
-    const blockedDates = [
-      , "2024-12-24" // 2024 Weihnachten
-      , "2024-12-31" // 2024 Neujahr
-    ];
-  
-    let output = "";
-    for (let i = 0; i < 3; i++) {
-      let tuesday = new Date(now.getTime() + dayInMs * ((7 * i) + daysUntilTuesday));
-      let weekDayOverride = (now.getDay() == 2 && i == 0) ? "Heute" : null; // 2 == Dienstag
-      // let isoDate = formatIsoDate(tuesday);
-      // let isBlocked = blockedDates.includes(isoDate);
-      // console.log("isoDate: " + isoDate + ", isBlocked: " + isBlocked);
-      let liClass = (blockedDates.includes(formatIsoDate(tuesday))) ? " class='blocked-tuesday' " : '';
-      output += "<li" + liClass +">" + formatDate(tuesday, weekDayOverride) + "</li>";
-    }
-    document.getElementById("treff").innerHTML = output;
-  </script>
-  <!-- <script src="build/main.bundle.js"></script> -->
+        const blockedDates = [
+            , "2024-12-24" // 2024 Weihnachten
+            , "2024-12-31" // 2024 Neujahr
+        ];
+      
+        let output = "";
+        for (let i = 0; i < 3; i++) {
+            let tuesday = new Date(now.getTime() + dayInMs * ((7 * i) + daysUntilTuesday));
+            let weekDayOverride = (now.getDay() == 2 && i == 0) ? "Heute" : null; // 2 == Dienstag
+            // let isoDate = formatIsoDate(tuesday);
+            // let isBlocked = blockedDates.includes(isoDate);
+            // console.log("isoDate: " + isoDate + ", isBlocked: " + isBlocked);
+            let liClass = (blockedDates.includes(formatIsoDate(tuesday))) ? " class='blocked-tuesday' " : '';
+            output += "<li" + liClass +">" + formatDate(tuesday, weekDayOverride) + "</li>";
+        }
+        document.getElementById("treff").innerHTML = output;
+    </script>
+    <!-- <script src="build/main.bundle.js"></script> -->
 </body>
 </html>
