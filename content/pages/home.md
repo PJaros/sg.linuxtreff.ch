@@ -21,4 +21,13 @@ Die Türen zum Linuxtreff öffnen jeden Dienstag um 18:30 im Hackerspace Ruum42 
 
 Der Eingang befindet sich auf der linken Seite bei der Garage Enzler im Kellergeschoss. Für Strom und Internetzugang ist gesorgt. Getränke sind vorhanden. Wir holen uns zusammen auch immer wieder mal eine Pizza.
 
-![Karte Andreasstrasse St. Gallen]({static}/pages/karte.png){: .img-center }
+<div id="map" style="width: 600px; height: 400px;"></div>
+<script>
+    const coord = [47.420653,9.355746];
+    const map = L.map('map').setView(coord, 17);
+    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    var marker = L.marker(coord).addTo(map);
+</script>
