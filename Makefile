@@ -10,8 +10,8 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 SSH_HOST=sg.linuxtreff.ch
 SSH_PORT=2121
-SSH_USER=jaros
-SSH_TARGET_DIR=/var/www
+SSH_USER=linuxtreff
+SSH_TARGET_DIR=/home/httpd/vhosts/linuxtreff.ch/sg.linuxtreff.ch
 
 
 DEBUG ?= 0

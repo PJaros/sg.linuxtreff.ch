@@ -22,10 +22,10 @@ CONFIG = {
     # Output path. Can be absolute or relative to tasks.py. Default: 'output'
     "deploy_path": SETTINGS["OUTPUT_PATH"],
     # Remote server configuration
-    "ssh_user": "jaros",
+    "ssh_user": "linuxtreff",
     "ssh_host": "sg.linuxtreff.ch",
     "ssh_port": "2121",
-    "ssh_path": "/var/www",
+    "ssh_path": "/home/httpd/vhosts/linuxtreff.ch/sg.linuxtreff.ch",
     # Host and port for `serve`
     "host": "localhost",
     "port": 8000,
