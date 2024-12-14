@@ -34,7 +34,7 @@
 		{% include "analytics.html" %}
 
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>	
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
 		<!-- mathjax config similar to math.stackexchange -->
 		<!-- <script type="text/x-mathjax-config">
@@ -103,7 +103,7 @@
 						{% for name, link in LINKS %}
 						<li><a href="{{ link }}">{{ name }}</a></li>
 						{% endfor %}
-					</ul>	
+					</ul>
 				</aside>
 
 				<!-- top bar nav -->
@@ -120,25 +120,13 @@
 								<li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 							{% endfor %}
 						</ul>
-						<!-- <ul class="left">
-							<li ><a href="./category/yeah.html">yeah</a></li>
-							<li ><a href="./category/misc.html">misc</a></li>
-							<li ><a href="./category/cat1.html">cat1</a></li>
-							<li ><a href="./category/bar.html">bar</a></li>
-					</ul>
-					<ul class="right">                                                                                                                                           
-								 <li><a href="./tag/oh.html">Oh Oh Oh</a></li>                                    
-								 <li><a href="./override/">Override url/save_as</a></li>                                    
-								 <li><a href="./pages/this-is-a-test-page.html">This is a test page</a></li>                                    
-					</ul>  						
-				-->
-				<ul class="left">
-					<li><a href="/pages/kontakt.html">Kontakt</a></li>                                    
-				</ul>  						
-				<ul class="right">
-					<li><a href="/pages/misc.html">Misc</a></li>                                    
-				</ul>  						
-				</section>
+						<ul class="left">
+							<li><a href="/pages/kontakt.html">Kontakt</a></li>
+						</ul>
+						<ul class="right">
+							<li><a href="/pages/misc.html">Misc</a></li>
+						</ul>
+					</section>
 				</nav>
 
 				<!-- Main Page Content and Sidebar -->
@@ -169,8 +157,7 @@
 									{% endfor %}
 								</ul>
 							</div> -->
-<!-- 
-							<div class="panel">
+							<!-- <div class="panel">
 								<h5>Tags</h5>
 								<ul class="tag-cloud">
 									{% for tag in tag_cloud %}
@@ -178,7 +165,6 @@
 									{% endfor %}
 								</ul>
 							</div> -->
-
 							<div class="panel">
 							<h5>Nächste Treffs</h5>
 							<ul class="next-meetup" id="treff">
@@ -198,7 +184,7 @@
 									// From: https://stackoverflow.com/a/29774197/406423
 									return d.toISOString().split('T')[0];
 								}
-								
+
 								const dayInMs = 24 * 60 * 60 * 1000;
 								let now       = new Date();
 								// let now      = new Date(new Date().getTime() - (dayInMs * 2));
@@ -209,7 +195,7 @@
 									, "2024-12-24" // 2024 Weihnachten
 									, "2024-12-31" // 2024 Neujahr
 								];
-								
+
 								let output = "";
 								for (let i = 0; i < 3; i++) {
 									let tuesday = new Date(now.getTime() + dayInMs * ((7 * i) + daysUntilTuesday));
@@ -223,7 +209,6 @@
 								document.getElementById("treff").innerHTML = output;
 							</script>
 							</div>
-						  
 
 							{% if MONTH_ARCHIVE_SAVE_AS %}
 							<div class="panel">
