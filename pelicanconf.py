@@ -66,8 +66,8 @@ EXTRA_PATH_METADATA = {
 # THEME = 'foundation-default-colours'
 THEME = './themes/sg-linuxtreff-ch-theme'
 
-# FOUNDATION_FOOTER_TEXT = "Linuxtreff St. Gallen"
-FOUNDATION_FOOTER_TEXT = ' '
+# FOUNDATION_FOOTER_TEXT = 'Gebaut mit <a href="http://getpelican.com">Pelican</a> und <a href="http://foundation.zurb.com/">Foundation</a>. Theme basierend auf <a href="http://hamaluik.com">Kenton Hamaluik</a>'
+FOUNDATION_FOOTER_TEXT = ''
 
 # 'markdown.extensions.attr_list' is allready included by default
 # This left here as a reminder how to add or reconfigure python-markdown plugins
