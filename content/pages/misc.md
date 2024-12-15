@@ -6,7 +6,8 @@ Wir bemühen uns, dass mit unseren Tipps und Ratschlägen niemand zu Schaden kom
 
 Wichtige Daten müssen vor einem Eingriff unbedingt auf ein geeignetes Backup Medium kopiert werden.
 
-## Aufbau der Webseite
-Die Webseite des Linuxtreff St. Gallen wird mit dem Static Site Generator [Pelican](https://getpelican.com) erstellt, einem flexiblen Tool, das Inhalte effizient in statische Webseiten umwandelt.
+## Danksagung
+Die Webseite des Linuxtreff St. Gallen wird mit Hilfe der folgenden Open-Source-Projekte erstellt:
 
-Als Theme-Basis nutze ich [Foundation-default-colours](https://pelicanthemes.com/foundation-default-colours/) von [Kenton Hamaluik](https://github.com/hamaluik) das auf [Foundation 5](https://get.foundation/sites/docs-v5/) basiert – einem CSS-Framework, das für ein modernes, responsive Design sorgt.
+ - [Pelican](https://getpelican.com) ein eleganter und flexibles Static Site Generator.
+ - Das [Foundation-default-colours](https://pelicanthemes.com/foundation-default-colours/) Pelican-Theme von [Kenton Hamaluik](https://github.com/hamaluik) welches ich für diese Webseite modifiziert habe.
