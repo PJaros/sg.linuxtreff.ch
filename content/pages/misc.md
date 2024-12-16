@@ -9,5 +9,5 @@ Wichtige Daten müssen vor einem Eingriff unbedingt auf ein geeignetes Backup Me
 ## Danksagung
 Die Webseite des Linuxtreff St. Gallen wird mit Hilfe der folgenden Open-Source-Projekte erstellt:
 
- - [Pelican](https://getpelican.com) ein eleganter und flexibles Static Site Generator.
+ - [Pelican](https://getpelican.com) ein eleganter und flexibler Static Site Generator.
  - Das [Foundation-default-colours](https://pelicanthemes.com/foundation-default-colours/) Pelican-Theme von [Kenton Hamaluik](https://github.com/hamaluik) welches ich für diese Webseite modifiziert habe.
