@@ -69,6 +69,11 @@ THEME = './themes/sg-linuxtreff-ch-theme'
 # FOUNDATION_FOOTER_TEXT = 'Gebaut mit <a href="http://getpelican.com">Pelican</a> und <a href="http://foundation.zurb.com/">Foundation</a>. Theme basierend auf <a href="http://hamaluik.com">Kenton Hamaluik</a>'
 FOUNDATION_FOOTER_TEXT = ''
 
+BLOCKED_DATES = [
+      "2024-12-24" # 2024 Weihnachten
+    , "2024-12-31" # 2024 Neujahr
+]
+
 # 'markdown.extensions.attr_list' is allready included by default
 # This left here as a reminder how to add or reconfigure python-markdown plugins
 # MARKDOWN = {'extension_configs': {

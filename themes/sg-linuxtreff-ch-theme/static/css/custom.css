@@ -134,7 +134,7 @@ code {
     margin-right: auto;
 }
 
-.blocked-tuesday {
+.blockd-tday {
     text-decoration: line-through;
     color: gray;
 }
@@ -147,6 +147,12 @@ code {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+aside.left-off-canvas-menu ul.off-canvas-list li.tday-sidem {
+    padding: 0.33rem 0.33rem 0.33rem 0.66rem;
+    color: rgba(255, 255, 255, 0.7) !important;
+    border-bottom: 1px solid #262626;
 }
 
 footer {
