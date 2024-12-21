@@ -40,8 +40,8 @@ AUTHOR_FEED_RSS = None
 
 # Linked neighborhood
 LINKS = (
-      ("Ruum42",                 "https://ruum42.ch")
-    , ("Linuxtreff Kreuzlingen", "https://kreuzlingen.linuxtreff.ch")
+      ("Ruum42",                    "https://ruum42.ch")
+    , ("Computertreff Kreuzlingen", "https://kreuzlingen.linuxtreff.ch")
 )
 
 TAGS_SAVE_AS = ''
