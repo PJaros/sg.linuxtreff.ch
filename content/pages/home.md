@@ -21,7 +21,7 @@ Die Türen zum Linuxtreff öffnen jeden Dienstag um 18:30 im Hackerspace Ruum42 
 
 Der Eingang befindet sich auf der linken Seite bei der Garage Enzler im Kellergeschoss. Für Strom und Internetzugang ist gesorgt. Getränke sind vorhanden. Wir holen uns zusammen auch immer wieder mal eine Pizza.
 
-<div id="map" style="width: 600px; height: 400px; margin-bottom: 20px;"></div>
+<div id="map" style="width: 600px; height: 400px;"></div>
 <script>
     const coord = [47.420653,9.355746];
     const map = L.map('map').setView(coord, 17);

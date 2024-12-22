@@ -207,23 +207,29 @@
 					</div>
 
 				</section>
+				<!-- Footer -->
+				{% if FOUNDATION_FOOTER_TEXT %}
+				<footer>
+					<div class="row">
+						<div class="medium-9 small-12 columns text-center">{{ FOUNDATION_FOOTER_TEXT }} </div>
+					</div>
+				</footer>
+				{% endif %}
+				{% if LAST_UPDATE_TEXT %}
+				<footer>
+					<div class="row">
+						<div class="medium-9 small-12 columns text-right"><i>{{ LAST_UPDATE_TEXT }}</i></div>
+					</div>
+				</footer>
+				{% endif %}
+				<!-- End Footer -->
 				<a class="exit-off-canvas"></a>
 			</div><!--off-canvas wrap-->
 		</div><!--off-canvas inner-->
 	
-		<!-- Footer -->
-		{% if FOUNDATION_FOOTER_TEXT %}
-		<footer>
-			<div class="row">
-				<div class="medium-9 small-12 text-center">{{ FOUNDATION_FOOTER_TEXT }} </div>
-			</div>
-		</footer>
-		{% endif %}
-		<!-- End Footer -->
-
 		<script src="{{ SITEURL }}/theme/js/jquery.js"></script>
 		<script src="{{ SITEURL }}/theme/js/foundation.min.js"></script>
-		{% if FOUNDATION_FOOTER_TEXT %}
+		{% if FOUNDATION_FOOTER_TEXT or LAST_UPDATE_TEXT %}
 		<script src="{{ SITEURL }}/theme/js/stickyFooter.js"></script>
 		{% endif %}
 		<script>
