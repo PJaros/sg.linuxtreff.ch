@@ -171,6 +171,7 @@ div.last_update {
     text-rendering: optimizelegibility;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 90%;
+    padding-bottom: 0.25em;
 }
 
 section.main-section div div h2 {
