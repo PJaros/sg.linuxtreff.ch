@@ -155,6 +155,24 @@ aside.left-off-canvas-menu ul.off-canvas-list li.tday-sidem {
     border-bottom: 1px solid #262626;
 }
 
-footer {
-    line-height: 2;
+footer div div {
+    line-height: 1.3;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5em;
+    font-weight: 300 !important;
+    text-rendering: optimizelegibility;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+    font-size: 90%;
+}
+
+div.last_update {
+    text-align: right;
+    font-weight: 300;
+    text-rendering: optimizelegibility;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 90%;
+}
+
+section.main-section div div h2 {
+    margin-bottom: 0.25rem;
 }

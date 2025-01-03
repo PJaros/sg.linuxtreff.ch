@@ -72,7 +72,7 @@
 				<!-- mobile side bar nav -->
 				<aside class="left-off-canvas-menu">
 					<ul class="off-canvas-list" id="left-side-treffen">
-						<li><a href="{{ SITEURL }}">Home</a></li>
+						<li><a href="{{ SITEURL }}/">Home</a></li>
 						<!-- <li><label>Categories</label></li>
 						{% for cat, articles in categories %}
 							<li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
@@ -144,11 +144,15 @@
 						<div class="logo">
 							<img src="/tux-sg.png">
 						</div>
-						<div class="medium-9 small-12 columns" role="content">
+						<div class="medium-9 small-12 columns header" role="content">
 							{% if pagetitle is defined %}
 							<div class="row">
 								<div class="small-12 columns">
 									<h2>{{ pagetitle }}</h2>
+									{% if LAST_UPDATE_TEXT %}
+									<div class="last_update">{{ LAST_UPDATE_TEXT }}</div>
+									</footer>
+									{% endif %}
 								</div>
 							</div>
 							{% endif %}
@@ -211,14 +215,7 @@
 				{% if FOUNDATION_FOOTER_TEXT %}
 				<footer>
 					<div class="row">
-						<div class="medium-9 small-12 columns text-center">{{ FOUNDATION_FOOTER_TEXT }} </div>
-					</div>
-				</footer>
-				{% endif %}
-				{% if LAST_UPDATE_TEXT %}
-				<footer>
-					<div class="row">
-						<div class="medium-9 small-12 columns text-right"><i>{{ LAST_UPDATE_TEXT }}</i></div>
+						<div class="medium-9 small-12 columns text-center">{{ FOUNDATION_FOOTER_TEXT }}</div>
 					</div>
 				</footer>
 				{% endif %}

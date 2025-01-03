@@ -66,9 +66,9 @@ EXTRA_PATH_METADATA = {
 # THEME = 'foundation-default-colours'
 THEME = './themes/sg-linuxtreff-ch-theme'
 
-# FOUNDATION_FOOTER_TEXT = 'Gebaut mit <a href="http://getpelican.com">Pelican</a> und <a href="http://foundation.zurb.com/">Foundation</a>. Theme basierend auf <a href="http://hamaluik.com">Kenton Hamaluik</a>'
+FOUNDATION_FOOTER_TEXT = 'Gebaut mit <a href="http://getpelican.com">Pelican</a> und <a href="http://foundation.zurb.com/">Foundation</a>. Angepasstes Theme. Original von <a href="http://hamaluik.com">Kenton Hamaluik</a>.'
 # FOUNDATION_FOOTER_TEXT = ''
-LAST_UPDATE_TEXT = "Letzter Update 2024-12-22"
+LAST_UPDATE_TEXT = "Letzter Update 2025-01-03"
 
 BLOCKED_DATES = [
       "2024-12-24" # 2024 Weihnachten
